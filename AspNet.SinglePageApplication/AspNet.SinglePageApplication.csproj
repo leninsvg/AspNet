@@ -109,6 +109,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="index.html" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -130,6 +131,7 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app\app.ts" />
+    <TypeScriptCompile Include="app\components\person.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
@@ -138,6 +140,7 @@
     <Folder Include="app\controllers\" />
     <Folder Include="app\modules\" />
     <Folder Include="app\services\" />
+    <Folder Include="templates\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
