@@ -1,25 +1,24 @@
 ﻿<!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title>Angular QuickStart</title>
+    <!--Indispensable para el routing-->
     <base href="/src/">
     <meta charset="UTF-8">
+    <base href="/">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
-
+    <link href="assets/styles.css" rel="stylesheet" />
     <!-- Polyfill(s) for older browsers -->
     <script src="/node_modules/core-js/client/shim.min.js"></script>
-
     <script src="/node_modules/zone.js/dist/zone.js"></script>
     <script src="/node_modules/systemjs/dist/system.src.js"></script>
-
     <script src="systemjs.config.js"></script>
     <script>
-      System.import('main.js').catch(function(err){ console.error(err); });
+        System.import('main.js').catch(function (err) { console.error(err); });
     </script>
-  </head>
-
-  <body>
+</head>
+<body>
     <my-app>Loading AppComponent content here ...</my-app>
-  </body>
+</body>
 </html>

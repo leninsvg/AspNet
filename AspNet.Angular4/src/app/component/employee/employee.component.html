@@ -1,6 +1,12 @@
 ﻿<h3>Selector de colores</h3>
-<input type="text" [(ngModel)]="selectedColor"/>
-<pre>
+<button (click)="getColor();">ObtenerColor</button>
+<input [ngClass]="[ 'borderBlue']"  type="text" [(ngModel)]="selectedColor"/>
+<pre 
+     [style.border]="selectedColor == 'green' ? '5px solid black' : '1px solid green'"
+     [ngClass]="{
+        borderBlue : selectedColor == 'blue',
+        borderGreen : selectedColor == 'green'
+     }">
     <strong>Color Elegido</strong>
     {{selectedColor}}
 </pre>
@@ -89,6 +95,5 @@
         </ul>
     </li>
 </ul>
-
 <br />
 <br />

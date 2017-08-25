@@ -32,4 +32,7 @@ export class EmployeeComponent{
     changeTypeWorker(value: boolean) {
         this.externalWorker = value;
     }
+    getColor() {
+        console.log(this.selectedColor);
+    }
 }

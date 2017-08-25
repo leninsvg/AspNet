@@ -29,6 +29,9 @@ var EmployeeComponent = (function () {
     EmployeeComponent.prototype.changeTypeWorker = function (value) {
         this.externalWorker = value;
     };
+    EmployeeComponent.prototype.getColor = function () {
+        console.log(this.selectedColor);
+    };
     return EmployeeComponent;
 }());
 EmployeeComponent = __decorate([

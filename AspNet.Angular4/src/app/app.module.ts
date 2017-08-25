@@ -1,6 +1,7 @@
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms' //Libreria que sirve para el doble data binding
+import { routing, appRoutingProviders } from './app.routing';
 
 import { AppComponent } from './app.component';
 import { PersonComponent } from './component/person/person.component';
@@ -10,7 +11,8 @@ import { EmployeeComponent } from './component/employee/employee.component';
     //Importaciones de librerias
     imports: [
         BrowserModule,
-        FormsModule
+        FormsModule,
+        routing
     ],
     //Importacion de componentes
     declarations: [
@@ -18,6 +20,9 @@ import { EmployeeComponent } from './component/employee/employee.component';
         PersonComponent,
         EmployeeComponent
     ],
-  bootstrap:    [ AppComponent ]
+    providers: [
+        appRoutingProviders
+    ],
+    bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
