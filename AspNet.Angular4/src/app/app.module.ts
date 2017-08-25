@@ -6,6 +6,8 @@ import { routing, appRoutingProviders } from './app.routing';
 import { AppComponent } from './app.component';
 import { PersonComponent } from './component/person/person.component';
 import { EmployeeComponent } from './component/employee/employee.component';
+import { HomeComponent } from './component/home/home.component';
+import { ContactComponent } from './component/contact/contact.component';
 
 @NgModule({
     //Importaciones de librerias
@@ -18,7 +20,9 @@ import { EmployeeComponent } from './component/employee/employee.component';
     declarations: [
         AppComponent,
         PersonComponent,
-        EmployeeComponent
+        EmployeeComponent,
+        HomeComponent,
+        ContactComponent
     ],
     providers: [
         appRoutingProviders

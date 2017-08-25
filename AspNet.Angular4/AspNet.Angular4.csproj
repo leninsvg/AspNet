@@ -100,6 +100,8 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="src\app\component\contact\contact.component.html" />
+    <Content Include="src\app\component\home\home.component.html" />
     <Content Include="src\assets\styles.css" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -137,8 +139,10 @@
     <TypeScriptCompile Include="src\app\app.component.ts" />
     <TypeScriptCompile Include="src\app\app.module.ts" />
     <TypeScriptCompile Include="src\app\app.routing.ts" />
+    <TypeScriptCompile Include="src\app\component\contact\contact.component.ts" />
     <TypeScriptCompile Include="src\app\component\employee\employee.component.ts" />
     <TypeScriptCompile Include="src\app\component\person\person.component.ts" />
+    <TypeScriptCompile Include="src\app\component\home\home.component.ts" />
     <TypeScriptCompile Include="src\app\model\employee.ts" />
     <TypeScriptCompile Include="src\main.ts" />
   </ItemGroup>

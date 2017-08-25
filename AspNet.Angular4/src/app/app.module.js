@@ -13,6 +13,8 @@ var app_routing_1 = require("./app.routing");
 var app_component_1 = require("./app.component");
 var person_component_1 = require("./component/person/person.component");
 var employee_component_1 = require("./component/employee/employee.component");
+var home_component_1 = require("./component/home/home.component");
+var contact_component_1 = require("./component/contact/contact.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -30,7 +32,9 @@ AppModule = __decorate([
         declarations: [
             app_component_1.AppComponent,
             person_component_1.PersonComponent,
-            employee_component_1.EmployeeComponent
+            employee_component_1.EmployeeComponent,
+            home_component_1.HomeComponent,
+            contact_component_1.ContactComponent
         ],
         providers: [
             app_routing_1.appRoutingProviders
