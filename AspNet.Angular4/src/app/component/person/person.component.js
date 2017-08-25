@@ -30,9 +30,9 @@ var PersonComponent = (function () {
         if (a === 8) {
             var a_1 = 3;
             var b = 88;
-            console.log('En el If', a_1);
+            console.log('En el If', a_1, b);
         }
-        console.log('Fuera del If', a);
+        console.log('Fuera del If', a, b);
     };
     //Declaracion de Funciones
     PersonComponent.prototype.changeFirstName = function () {

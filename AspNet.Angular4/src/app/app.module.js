@@ -8,8 +8,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
+var forms_1 = require("@angular/forms"); //Libreria que sirve para el doble data binding
 var app_component_1 = require("./app.component");
 var person_component_1 = require("./component/person/person.component");
+var employee_component_1 = require("./component/employee/employee.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -17,10 +19,16 @@ var AppModule = (function () {
 }());
 AppModule = __decorate([
     core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule],
+        //Importaciones de librerias
+        imports: [
+            platform_browser_1.BrowserModule,
+            forms_1.FormsModule
+        ],
+        //Importacion de componentes
         declarations: [
             app_component_1.AppComponent,
-            person_component_1.PersonComponent
+            person_component_1.PersonComponent,
+            employee_component_1.EmployeeComponent
         ],
         bootstrap: [app_component_1.AppComponent]
     })

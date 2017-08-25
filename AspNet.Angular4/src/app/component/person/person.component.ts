@@ -27,9 +27,9 @@ export class PersonComponent{
         if (a === 8) {
             let a = 3;
             var b = 88;
-            console.log('En el If',a)
+            console.log('En el If', a, b)
         }
-        console.log('Fuera del If', a)
+        console.log('Fuera del If', a, b)
     }           
     //Declaracion de Funciones
     changeFirstName() {

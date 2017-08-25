@@ -113,6 +113,7 @@
     <Content Include="scripts\ai.0.22.9-build00167.js" />
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="src\app\app.component.html" />
+    <Content Include="src\app\component\employee\employee.component.html" />
     <Content Include="src\app\component\person\person.component.html" />
     <Content Include="src\favicon.ico" />
     <Content Include="src\index.html" />
@@ -134,9 +135,12 @@
     <TypeScriptCompile Include="src\app\app.component.spec.ts" />
     <TypeScriptCompile Include="src\app\app.component.ts" />
     <TypeScriptCompile Include="src\app\app.module.ts" />
+    <TypeScriptCompile Include="src\app\component\employee\employee.component.ts" />
     <TypeScriptCompile Include="src\app\component\person\person.component.ts" />
+    <TypeScriptCompile Include="src\app\model\employee.ts" />
     <TypeScriptCompile Include="src\main.ts" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
