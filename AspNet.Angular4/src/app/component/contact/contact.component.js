@@ -26,6 +26,12 @@ var ContactComponent = (function () {
             console.log(params.idContact);
         });
     };
+    ContactComponent.prototype.redirect = function () {
+        this._router.navigate(['/contact', 'parametro 1']);
+    };
+    ContactComponent.prototype.redirectHome = function () {
+        this._router.navigate(['/Home']);
+    };
     return ContactComponent;
 }());
 ContactComponent = __decorate([

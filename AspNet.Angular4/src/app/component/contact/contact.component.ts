@@ -24,4 +24,11 @@ export class ContactComponent {
             console.log(params.idContact);
         });
     }
+
+    redirect() {
+        this._router.navigate(['/contact','parametro 1']);
+    }
+    redirectHome() {
+        this._router.navigate(['/Home']);
+    }
 }

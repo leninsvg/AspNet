@@ -10,18 +10,34 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
+//Importacion capaS de servicios
+var clothing_service_1 = require("../../services/clothing.service");
 var HomeComponent = (function () {
-    function HomeComponent() {
+    function HomeComponent(_clothingService) {
+        this._clothingService = _clothingService;
         this.title = 'Home';
     }
+    HomeComponent.prototype.ngOnInit = function () {
+        this.listClothing = this._clothingService.getClothing();
+        console.log(this.listClothing);
+    };
+    HomeComponent.prototype.addClothing = function () {
+        this.listClothing = this._clothingService.addClothing(this.insertClothing);
+        this.insertClothing = null;
+    };
+    HomeComponent.prototype.deleteClothing = function (index) {
+        alert(index);
+        this.listClothing = this._clothingService.deleteClothing(index);
+    };
     return HomeComponent;
 }());
 HomeComponent = __decorate([
     core_1.Component({
         selector: 'myHome',
-        templateUrl: './home.component.html'
+        templateUrl: './home.component.html',
+        providers: [clothing_service_1.ClothingService] //Importacion de los servicios
     }),
-    __metadata("design:paramtypes", [])
+    __metadata("design:paramtypes", [clothing_service_1.ClothingService])
 ], HomeComponent);
 exports.HomeComponent = HomeComponent;
 //# sourceMappingURL=home.component.js.map

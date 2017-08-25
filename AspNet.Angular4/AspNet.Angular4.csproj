@@ -144,6 +144,7 @@
     <TypeScriptCompile Include="src\app\component\person\person.component.ts" />
     <TypeScriptCompile Include="src\app\component\home\home.component.ts" />
     <TypeScriptCompile Include="src\app\model\employee.ts" />
+    <TypeScriptCompile Include="src\app\services\clothing.service.ts" />
     <TypeScriptCompile Include="src\main.ts" />
   </ItemGroup>
   <ItemGroup />
