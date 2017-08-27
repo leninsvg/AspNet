@@ -6,6 +6,8 @@ import { EmployeeComponent } from './component/employee/employee.component';
 import { PersonComponent } from './component/person/person.component';
 import { HomeComponent } from './component/home/home.component';
 import { ContactComponent } from './component/contact/contact.component';
+import { CarComponent } from './component/car/car.component';
+import { TemplateComponent } from './component/template/template.component';
 
 const appRoutes: Routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -13,7 +15,9 @@ const appRoutes: Routes = [
     { path: 'contact', component: ContactComponent },
     { path: 'contact/:idContact', component: ContactComponent },//Paso de parametro
     { path: 'employee', component: EmployeeComponent },
-    { path: 'person', component: PersonComponent},
+    { path: 'person', component: PersonComponent },
+    { path: 'car', component: CarComponent },
+    { path: 'template', component: TemplateComponent },
     { path: '**', redirectTo: '/home'} //Carga cuando se introduce otra ruta
 ];
 

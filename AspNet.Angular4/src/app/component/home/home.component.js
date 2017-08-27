@@ -16,6 +16,7 @@ var HomeComponent = (function () {
     function HomeComponent(_clothingService) {
         this._clothingService = _clothingService;
         this.title = 'Home';
+        this.todayDate = new Date(2017, 6, 13);
     }
     HomeComponent.prototype.ngOnInit = function () {
         this.listClothing = this._clothingService.getClothing();

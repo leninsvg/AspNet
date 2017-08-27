@@ -1,4 +1,4 @@
-﻿//Importacion que permite inyectar codigo en otros lados
+﻿ //Importacion que permite inyectar codigo en otros lados
 import { Injectable } from '@angular/core';
 
 @Injectable()

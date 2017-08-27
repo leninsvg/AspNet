@@ -26,6 +26,7 @@
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <TypeScriptToolsVersion>2.3</TypeScriptToolsVersion>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -100,9 +101,10 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="src\app\component\car\car.component.html" />
     <Content Include="src\app\component\contact\contact.component.html" />
     <Content Include="src\app\component\home\home.component.html" />
-    <Content Include="src\assets\styles.css" />
+    <Content Include="src\app\assets\styles.css" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -118,6 +120,7 @@
     <Content Include="src\app\app.component.html" />
     <Content Include="src\app\component\employee\employee.component.html" />
     <Content Include="src\app\component\person\person.component.html" />
+    <Content Include="src\app\component\template\template.component.html" />
     <Content Include="src\favicon.ico" />
     <Content Include="src\index.html" />
     <Content Include="src\styles.css" />
@@ -139,11 +142,16 @@
     <TypeScriptCompile Include="src\app\app.component.ts" />
     <TypeScriptCompile Include="src\app\app.module.ts" />
     <TypeScriptCompile Include="src\app\app.routing.ts" />
+    <TypeScriptCompile Include="src\app\component\car\car.component.ts" />
     <TypeScriptCompile Include="src\app\component\contact\contact.component.ts" />
     <TypeScriptCompile Include="src\app\component\employee\employee.component.ts" />
     <TypeScriptCompile Include="src\app\component\person\person.component.ts" />
     <TypeScriptCompile Include="src\app\component\home\home.component.ts" />
+    <TypeScriptCompile Include="src\app\component\template\template.component.ts" />
+    <TypeScriptCompile Include="src\app\model\car.ts" />
     <TypeScriptCompile Include="src\app\model\employee.ts" />
+    <TypeScriptCompile Include="src\app\pipes\converter.pipe.ts" />
+    <TypeScriptCompile Include="src\app\services\request.service.ts" />
     <TypeScriptCompile Include="src\app\services\clothing.service.ts" />
     <TypeScriptCompile Include="src\main.ts" />
   </ItemGroup>

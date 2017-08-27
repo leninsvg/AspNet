@@ -1,0 +1,51 @@
+﻿<h1>Car Component</h1>
+<form #formCar="ngForm" (ngSubmit)="onSubmit(formCar);">
+    <div>
+        <label>Nombre: </label>
+        <input type="text" name="name" #name="ngModel" [(ngModel)]="car.name" required/>
+        <span *ngIf="name.touched && !name.valid">
+            El Nombre del Carro es Incorrecto
+        </span>
+    </div>
+    <div>
+        <label>Color: </label>
+        <input type="text" name="color" #color="ngModel" [(ngModel)]="car.color" pattern="[a-zA-Z#]+" required/>
+        <span *ngIf="color.touched && !color.valid">
+            Color Incorrecto
+        </span>
+    </div>
+    <div>
+        <label>Marca: </label>
+        <input type="text" name="mark" #mark="ngModel" [(ngModel)]="car.mark" required/>
+        <span *ngIf="value.mark && !value.mark">
+            Marca incorrecta
+        </span>
+    </div>
+    <div>
+        <label>Valor: </label>
+        <input type="text" name="value" #value="ngModel" [(ngModel)]="car.value" pattern="[0-9]+"/>
+        <span *ngIf="value.touched && !value.valid">
+            Valor incorrecto
+        </span>
+    </div>
+    <div>
+        <input type="submit" value="Guardar" [disabled]="formCar.invalid"/>
+    </div>
+</form>
+<div>
+    <h4>Listado de Carros</h4>
+    <ul>
+        <li *ngFor="let car of listCar">
+            {{car.name}} - {{car.color}} - {{car.mark}} - {{car.value}}
+        </li>
+    </ul>
+</div>
+<div>
+    <h4>Listado de Usuarios</h4>
+    <ul *ngIf="listUser">
+        <li *ngFor="let user of listUser">
+            {{user | json}}
+        </li>
+    </ul>
+    <p *ngIf="!listUser">Loading...</p>
+</div>

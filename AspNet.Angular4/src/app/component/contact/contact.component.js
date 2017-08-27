@@ -36,7 +36,7 @@ var ContactComponent = (function () {
 }());
 ContactComponent = __decorate([
     core_1.Component({
-        selector: 'myContact',
+        selector: 'app-contact',
         templateUrl: './contact.component.html'
     }),
     __metadata("design:paramtypes", [router_1.ActivatedRoute,

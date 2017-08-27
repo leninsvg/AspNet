@@ -2,7 +2,7 @@
 import { Router, ActivatedRoute, Params } from '@angular/router'; //Para el paso de parametros desde una url
 
 @Component({
-    selector: 'myContact',
+    selector: 'app-contact',
     templateUrl:'./contact.component.html'
 })
 

@@ -1,5 +1,12 @@
 ﻿<h2>{{title}}</h2>
 <hr />
+{{todayDate | date:'yyyy/MM/dd'}}
+{{todayDate | date:'fullDate' | uppercase}}
+{{title | lowercase}} - {{title | uppercase}}
+<div>
+    {{5 | converter:7 }}
+</div>
+<hr />
 <h3>Listado de prendas</h3>
 <input type="text" [(ngModel)]="insertClothing"/>
 <button type="button" (click)="addClothing();">Añadir prenda</button>
