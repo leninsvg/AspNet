@@ -15,9 +15,16 @@ var TemplateComponent = (function () {
     function TemplateComponent() {
         this.title = 'Platillas Angular4';
         this.administrator = true;
+        this.externalInfo = 'Lenin Samaniego';
+        this.identity = {
+            id: 1,
+            web: 'leningsv',
+            thematic: 'desarrollo web'
+        };
     }
     /** Called by Angular after template component initialized */
-    TemplateComponent.prototype.ngOnInit = function () { };
+    TemplateComponent.prototype.ngOnInit = function () {
+    };
     TemplateComponent.prototype.changeAdministrator = function () {
         this.administrator = !this.administrator;
     };

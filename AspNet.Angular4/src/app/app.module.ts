@@ -11,6 +11,7 @@ import { HomeComponent } from './component/home/home.component';
 import { ContactComponent } from './component/contact/contact.component';
 import { CarComponent } from './component/car/car.component';
 import { TemplateComponent } from './component/template/template.component';
+import { ChildrenComponent } from './component/children/children.component';
 
 import { ConverterPipe } from './pipes/converter.pipe';// Pipes
 
@@ -31,7 +32,8 @@ import { ConverterPipe } from './pipes/converter.pipe';// Pipes
         ContactComponent,
         ConverterPipe,
         CarComponent,
-        TemplateComponent
+        TemplateComponent,
+        ChildrenComponent
     ],
     providers: [
         appRoutingProviders

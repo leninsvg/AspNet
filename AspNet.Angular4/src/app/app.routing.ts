@@ -8,6 +8,7 @@ import { HomeComponent } from './component/home/home.component';
 import { ContactComponent } from './component/contact/contact.component';
 import { CarComponent } from './component/car/car.component';
 import { TemplateComponent } from './component/template/template.component';
+import { ChildrenComponent } from './component/children/children.component';
 
 const appRoutes: Routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -18,6 +19,7 @@ const appRoutes: Routes = [
     { path: 'person', component: PersonComponent },
     { path: 'car', component: CarComponent },
     { path: 'template', component: TemplateComponent },
+    { path: 'children', component: ChildrenComponent },
     { path: '**', redirectTo: '/home'} //Carga cuando se introduce otra ruta
 ];
 

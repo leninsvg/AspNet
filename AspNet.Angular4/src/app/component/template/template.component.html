@@ -1,4 +1,8 @@
-﻿<h4>{{title}}</h4>
+﻿<!--Permite el paso de parametros desde un padre. Cualquier componente puede tener hijos o papas-->
+<app-children [propertyA]="identity" 
+              [auxProperty]="'Propiedad B'"></app-children>
+<hr />
+<h4>{{title}}</h4>
 <button type="button" (click)="changeAdministrator();">Cambiar Administrador</button>
 <div *ngIf="administrator; then admin else noAdmin">   
 </div>

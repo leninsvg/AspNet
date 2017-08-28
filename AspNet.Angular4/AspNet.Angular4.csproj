@@ -302,6 +302,7 @@
     <Content Include="src\app\bowerComponents\tether\src\js\shift.js" />
     <Content Include="src\app\bowerComponents\tether\src\js\tether.js" />
     <Content Include="src\app\bowerComponents\tether\src\js\utils.js" />
+    <Content Include="src\app\component\children\children.component.html" />
     <Content Include="src\app\component\car\car.component.html" />
     <Content Include="src\app\component\contact\contact.component.html" />
     <Content Include="src\app\component\home\home.component.html" />
@@ -503,6 +504,7 @@
     <TypeScriptCompile Include="src\app\app.component.ts" />
     <TypeScriptCompile Include="src\app\app.module.ts" />
     <TypeScriptCompile Include="src\app\app.routing.ts" />
+    <TypeScriptCompile Include="src\app\component\children\children.component.ts" />
     <TypeScriptCompile Include="src\app\component\car\car.component.ts" />
     <TypeScriptCompile Include="src\app\component\contact\contact.component.ts" />
     <TypeScriptCompile Include="src\app\component\employee\employee.component.ts" />

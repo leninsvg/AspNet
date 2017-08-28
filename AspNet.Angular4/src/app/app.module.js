@@ -18,6 +18,7 @@ var home_component_1 = require("./component/home/home.component");
 var contact_component_1 = require("./component/contact/contact.component");
 var car_component_1 = require("./component/car/car.component");
 var template_component_1 = require("./component/template/template.component");
+var children_component_1 = require("./component/children/children.component");
 var converter_pipe_1 = require("./pipes/converter.pipe"); // Pipes
 var AppModule = (function () {
     function AppModule() {
@@ -42,7 +43,8 @@ AppModule = __decorate([
             contact_component_1.ContactComponent,
             converter_pipe_1.ConverterPipe,
             car_component_1.CarComponent,
-            template_component_1.TemplateComponent
+            template_component_1.TemplateComponent,
+            children_component_1.ChildrenComponent
         ],
         providers: [
             app_routing_1.appRoutingProviders
