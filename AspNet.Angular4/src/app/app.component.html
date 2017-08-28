@@ -1,12 +1,34 @@
-﻿<h3>{{title}}</h3>
-<nav>
-    <a [routerLink]="['/home']" [routerLinkActive]="['active']">Inicio</a>
-    <a [routerLink]="['/contact']" [routerLinkActive]="['active']">Contacto</a>
-    <a [routerLink]="['/employee']" [routerLinkActive]="['active']">Empleado</a>
-    <a [routerLink]="['/person']" [routerLinkActive]="['active']">Persona</a>
-    <a [routerLink]="['/car']" [routerLinkActive]="['active']">Car</a>
-    <a [routerLink]="['/template']" [routerLinkActive]="['active']">Template</a>
+﻿<nav class="navbar navbar-toggleable-md navbar-inverse bg-primary bg-faded sticky-top">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">Navbar</a>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a [routerLink]="['/contact']" [routerLinkActive]="['active']" class="nav-link">Contacto</a>
+            </li>
+            <li class="nav-item">
+                <a [routerLink]="['/employee']" [routerLinkActive]="['active']" class="nav-link">Empleado</a>
+            </li>
+            <li class="nav-item">
+                <a [routerLink]="['/person']" [routerLinkActive]="['active']" class="nav-link">Persona</a>
+            </li>
+            <li class="nav-item">
+                <a [routerLink]="['/car']" [routerLinkActive]="['active']" class="nav-link">Auto</a>
+            </li>
+            <li class="nav-item">
+                <a [routerLink]="['/template']" [routerLinkActive]="['active']" class="nav-link">Template</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
 </nav>
+<h3>{{title}}</h3>
 <router-outlet></router-outlet>
 <!--<myEmployee></myEmployee>
 <myPerson></myPerson>-->

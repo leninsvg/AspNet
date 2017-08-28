@@ -1,0 +1,17 @@
+{
+  "name": "AspNet.Angular4",
+  "description": "QuickStart package.json from the documentation, supplemented with testing support",
+  "main": "",
+  "license": "MIT",
+  "homepage": "https://github.com/Leningsv/AspNet",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "4.0.0-alpha.6"
+  }
+}

@@ -8,15 +8,27 @@
     <base href="/">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
+    <!--Importacion Estilos-->
     <link href="app/assets/styles.css" rel="stylesheet" />
+    <!--Bootstrap-->
+    <link href="app/bowerComponents/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
     <!-- Polyfill(s) for older browsers -->
     <script src="/node_modules/core-js/client/shim.min.js"></script>
     <script src="/node_modules/zone.js/dist/zone.js"></script>
     <script src="/node_modules/systemjs/dist/system.src.js"></script>
     <script src="systemjs.config.js"></script>
+
     <script>
         System.import('main.js').catch(function (err) { console.error(err); });
     </script>
+    <!--Importacion Scripts-->
+    <!--jquery-->
+    <script src="app/bowerComponents/jquery/dist/jquery.js"></script>
+    <!--popper o tether-->
+    <script src="app/bowerComponents/tether/dist/js/tether.js"></script>
+    <!--<script src="app/bowerComponents/popper.js/dist/umd/popper.js"></script>-->
+    <!--Bootstrap-->
+    <script src="app/bowerComponents/bootstrap/dist/js/bootstrap.js"></script>
 </head>
 <body>
     <my-app>Loading AppComponent content here ...</my-app>
